@@ -88,24 +88,60 @@ button{
 
 .quad-infos{
     grid-area: infos;
-    width: 100%;
     display: grid;
     height: 21rem;
-    grid-template-areas:
-        "um dois tres";
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .um{
-    grid-area: um;
     background-color: #A167C9;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    align-self: center;
+}
+
+.sol{
+    height: 90px;
+    padding-block: 8px;
+}
+
+.texto{
+    padding-inline: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .dois{
-    grid-area: dois;
     background-color: #C299DC;
+    display: flex;
+    flex-direction: column;
+}
+
+.ondas{
+    height: 80px;
+    padding-block: 10px;
 }
 
 .tres{
-    grid-area: tres;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.face{
+    height: 80px;
+    padding-block: 10px;
+}
+
+.texto-tres{
+    padding-inline: 25px;
+    color: #640BA7;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
 }
