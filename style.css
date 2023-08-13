@@ -161,3 +161,26 @@ button{
     padding: 20px;
     border-radius: 10px;
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#search-input {
+    border: none;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 200px; 
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
