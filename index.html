@@ -18,8 +18,16 @@
         </div>
         <div class="cont-right">
             <div class="search-container">
-                <input type="text" id="search-input" placeholder="Pesquisar" oninput="searchHighlight()">
-            </div>
+                <div id="loadingIndicator" class="loading-indicator">Carregando...</div>
+                <input type="text" id="search-input" placeholder="Digite sua busca">
+                <div id="customMessage" class="custom-message">
+                    <div class="message-content">
+                        <p>O que você está procurando se encontra na próxima pagina!</p>
+                        <p>Deseja ser redirecionado agora?</p>
+                        <button id="yesButton">Sim</button>
+                        <button id="noButton">Não</button>
+                    </div>
+                </div>
     </header>
 
     <main>
