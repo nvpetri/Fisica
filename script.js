@@ -1,3 +1,11 @@
+/******************************************* ***************************************
+ * Objetivo: Script para criar um delay entre o click e a ação de redirecionamento *
+ * e para ativar a funcionalidade da barra de pesquisa sem necessidade de uma API. *
+ * Autor: Nicolas Vasconcelos Petri Santos                                         *
+ * Data: 13/08/2023                                                                *
+ * Versão: 1.8                                                                     *
+************************************************************************************/
+
 'use strict'
 
 const botao1 = document.getElementById('botao')
@@ -57,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function searchInIndex2(term) {
-        const response = await fetch('index2.html')
+        const response = await fetch('./pag2/index2.html')
         const html = await response.text()
 
         const tempElement = document.createElement('div')
