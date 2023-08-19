@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/favicon_sesi.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Raios UV e a Radiação na Pele</title>
 </head>
 <body>
@@ -17,8 +17,17 @@
             <img src="./img/menu 1haburguer.svg" alt="" class="hamburguer">
         </div>
         <div class="cont-right">
-            <img src="./img/barra-de-pesquisa 2.svg" alt="" class="barra-de-pesquisa">
-        </div>
+            <div class="search-container">
+                <div id="loadingIndicator" class="loading-indicator">Carregando...</div>
+                <input type="text" id="search-input" placeholder="Digite sua busca">
+                <div id="customMessage" class="custom-message">
+                    <div class="message-content">
+                        <p>O que você está procurando se encontra na próxima pagina!</p>
+                        <p>Deseja ser redirecionado agora?</p>
+                        <button id="yesButton">Sim</button>
+                        <button id="noButton">Não</button>
+                    </div>
+                </div>
     </header>
 
     <main>
@@ -33,7 +42,7 @@
                     </p>
                 </div>
                 <div class="botao">
-                    <button>
+                    <button class="button" id="botao">
                         saiba mais  →
                     </button>
                 </div>
@@ -69,6 +78,9 @@
                 </div>
             </div>
         </div>
+        <div id="loadingIndicator" class="hidden">
+            Carregando...
+          </div>
     </main>
 </body>
 </html>
