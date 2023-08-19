@@ -17,7 +17,7 @@ const noButton = document.getElementById('noButton')
 botao1.addEventListener('click', function() {
     loadingIndicator.style.display = 'block'
         setTimeout(() => {
-            window.location.href = './pag2/index2.html'
+            window.location.href = './index2.html'
         }, 500)
 })
 
