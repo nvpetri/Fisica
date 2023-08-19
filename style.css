@@ -78,6 +78,7 @@ button{
     font-weight: 300;
     border-radius: 20px 20px 20px 20px;
     color: #640BA7;
+    cursor: pointer;
 }
 
 .principal{

@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #640BA7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E6A02C;
+    height: 51px;
+}
+
+.cont-left{
+    padding-left: 80px;
+    padding-block: 15px;
+}
+
+.cont-right{
+    padding-right: 80px;
+}
