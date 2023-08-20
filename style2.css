@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 
 :root{
@@ -81,42 +80,104 @@ nav{
     padding-right: 80px;
 }
 
-main{
+.info{
     display: grid;
-    grid-template-areas:
-        "fisica sol"
-        "protetor quibio"
-        "relacoes moca"
-        "relacoes sobre";
+    grid-template-rows: auto;
+    height: 40vh;
 }
 
-.sol-main{
-    grid-area: sol;
-    height: 30rem;
+picture{
+    height: 50vh;
+    width: 45vw;
+    display: flex;
+    align-items: center;
 }
 
 .fisica{
-    grid-area: fisica;
+    overflow: hidden;
+    height: 55vh;}
+
+.fisica, .qui-bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.qui-bio{
+    background-color: yellow;
+}
+
+.fisica > .info-text{
+    order: -1;
+    height: 50vh;
+}
+
+.info-text{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+    place-self: center;
+    font-size: 1.3rem;
+    color: var(--roxo);
+    font-weight: 400;
+    text-align: center;
+    padding-inline: 37px;
+    width: auto;
+    font-weight: 300;
+}
+
+.qui-bio > .info-text{
+    height: 50vh;
+}
+
+.relacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "texto img"
+        "texto solar";
+    background-color: #7E33B7;
+}
+
+.relacoes > .info-text{
+    grid-area: texto;
+    order: -1;
+    color: var(--branco);
+    background-color: #7E33B7;
+}
+
+.relacoes > .prot-solar{
+    grid-area: solar;
+
+}
+
+.prot-solar > .info-text{
+    background-color: #E1CBEE;
+    color: var(--roxo);
+    font-size: 1.4rem;
+    height: 38vh;
+}
+
+.titulo{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.sol-main{
+    height: 70vh;
+}
+
+.prot{
+    height: 50vh;
+    width: 10%;
+    display: flex;
+    align-items: center;
 }
 
 .protetor{
-    grid-area: protetor;
-    height: 30rem;
-}
-
-.quibio{
-    grid-area: quibio;
+    height: 70vh;
 }
 
 .moca{
-    grid-area: moça ;
-    height: 30rem;
-}
-
-.rel{
-    grid-area: relacoes;
-}
-
-.sobre-protetor{
-    grid-area: sobre;
+    grid-area: img;
+    height: 70vh;
 }
