@@ -91,11 +91,14 @@ picture{
     width: 45vw;
     display: flex;
     align-items: center;
+    padding-top: 110px;
+    
 }
 
 .fisica{
     overflow: hidden;
-    height: 55vh;}
+    height: 55vh;
+}
 
 .fisica, .qui-bio{
     display: grid;
@@ -110,6 +113,46 @@ picture{
     order: -1;
     height: 50vh;
 }
+.moca{
+    overflow: hidden;
+    height: 70vh;
+}
+
+.moca, .qui-bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.qui-bio{
+    background-color: yellow;
+}
+
+.moca > .info-text{
+    order: -1;
+    height: 50vh;
+}
+
+.quimica{
+    overflow: hidden;
+    height: 55vh;
+}
+
+.quimica, .qui-bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.qui-bio{
+    background-color: yellow;
+}
+
+.quimica > .info-text{
+    order: 1;
+    height: 50vh;
+}
+
+
+
 
 .info-text{
     display: grid;
@@ -123,10 +166,17 @@ picture{
     padding-inline: 37px;
     width: auto;
     font-weight: 300;
+    padding-top: 1rem;
 }
 
 .qui-bio > .info-text{
     height: 50vh;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+
+.qui-bio > p{
+    height: 30vh;
 }
 
 .relacoes{
@@ -136,6 +186,7 @@ picture{
         "texto img"
         "texto solar";
     background-color: #7E33B7;
+    height: 100%;
 }
 
 .relacoes > .info-text{
@@ -143,6 +194,12 @@ picture{
     order: -1;
     color: var(--branco);
     background-color: #7E33B7;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+.relacoes > p{
+    height: 80vh;
 }
 
 .relacoes > .prot-solar{
@@ -154,7 +211,7 @@ picture{
     background-color: #E1CBEE;
     color: var(--roxo);
     font-size: 1.4rem;
-    height: 38vh;
+    height: 45.4vh;
 }
 
 .titulo{
@@ -166,18 +223,23 @@ picture{
     height: 70vh;
 }
 
+.protetor-main{
+    height: 67.5vh;
+}
+
 .prot{
-    height: 50vh;
-    width: 10%;
-    display: flex;
-    align-items: center;
+    height: 67.5vh;
 }
 
 .protetor{
-    height: 70vh;
+    max-width: 700px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
 }
 
-.moca{
+/* .moca{
     grid-area: img;
     height: 70vh;
-}
+    width: ;
+} */
