@@ -16,6 +16,12 @@ body{
 header{
     background-color: var(--roxo);
     height: 95vh;
+    position: relative;
+}
+
+header .img-principal img{
+    z-index: 2;
+    padding-top: 150px;
 }
 
 .icons{
@@ -61,7 +67,17 @@ h1{
 }
 
 .sol-amarelo{
-    height: 18.9rem;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sol-amarelo img{
+    height: 29rem;
 }
 
 nav{
