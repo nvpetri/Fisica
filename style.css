@@ -235,3 +235,62 @@ button{
     margin: 10px;
     z-index: 1;
 }
+
+@media (max-width: 1800px){
+ 
+    body{
+        grid-template-rows: 9vh 91vh;
+    }
+    
+    .texto{
+        font-size: 1.1rem;
+    }
+
+    .texto-tres{
+        font-size: 1.1rem;
+    }
+    
+    .container{
+        height: 77vh;
+    }
+    
+    .title{
+        display: flex;
+        font-size: 56px;
+        line-height: 50px;
+        color: #FFFFFF;
+    }
+
+    .info-text{
+        font-size: 23px;
+    }
+
+    .quad-infos{
+        height: 34vh;
+    }
+    
+    .sol{
+        padding-block: 0;
+        height: 57px;
+    }
+    
+    .texto{
+        padding-inline: 5px;
+        font-size: 1rem;
+    }
+    
+    .ondas{
+        padding-block: 0;
+        height: 50px;
+    }
+    
+    .face{
+        height: 70px;
+    }
+    
+    .texto-tres{
+        padding-inline: 3px;
+        font-size: 1rem;
+    }
+
+}

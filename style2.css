@@ -237,6 +237,22 @@ picture img{
     height: auto;
 }
 
+.integrantes{
+    padding-top: 30px;
+}
+
+h2{
+    font-size: 3rem;
+    color: var(--roxo);
+    text-align: center;
+}
+
+.container-integrantes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40vw;
+}
+
 
 @media (max-width: 1800px){
  
