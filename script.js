@@ -17,7 +17,7 @@ const noButton = document.getElementById('noButton')
 botao1.addEventListener('click', function() {
     loadingIndicator.style.display = 'block'
         setTimeout(() => {
-            window.location.href = './index2.html'
+            window.location.href = 'index2.html'
         }, 500)
 })
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function searchInIndex2(term) {
-        const response = await fetch('./pag2/index2.html')
+        const response = await fetch('index2.html')
         const html = await response.text()
 
         const tempElement = document.createElement('div')
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function redirectToIndex2() {
         loadingIndicator.style.display = 'block'
         setTimeout(() => {
-            window.location.href = './pag2/index2.html'
+            window.location.href = 'index2.html'
         }, 500)
     }
 
