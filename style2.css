@@ -162,9 +162,6 @@ picture img{
     order: 1;
 }
 
-
-
-
 .info-text{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -247,10 +244,32 @@ h2{
     text-align: center;
 }
 
+h3{
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--roxo);
+}
+
 .container-integrantes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 40vw;
+    padding-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: var(--roxo);
+}
+
+footer > p{
+    font-size: 1.4rem;
+    display: flex;
+    text-align: center;
+    font-weight: 300;
 }
 
 
